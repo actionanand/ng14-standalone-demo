@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { WelcomeComponent } from './welcome/welcome.component';
 
@@ -7,6 +8,6 @@ import { WelcomeComponent } from './welcome/welcome.component';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [WelcomeComponent]
+  imports: [WelcomeComponent, RouterModule]
 })
 export class AppComponent {}
