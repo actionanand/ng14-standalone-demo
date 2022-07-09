@@ -4,12 +4,16 @@
   "description": "This is a demo app for illustrating standalone components(without modules)",
   "author": "Anand Raja",
   "license": "MIT",
+  "homepage": "http://actionanand.github.io/ng14-standalone-demo",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:git": "ng build --output-path dist --base-href /ng14-standalone-demo/",
+    "predeploy": "npm run build:git",
+    "deploy": "gh-pages -d dist"
   },
   "private": true,
   "dependencies": {
@@ -30,6 +34,7 @@
     "@angular/cli": "~14.0.2",
     "@angular/compiler-cli": "^14.0.0",
     "@types/jasmine": "~4.0.0",
+    "gh-pages": "^4.0.0",
     "jasmine-core": "~4.1.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
