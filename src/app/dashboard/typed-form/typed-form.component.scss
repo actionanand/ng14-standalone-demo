@@ -1,0 +1,38 @@
+section {
+  background-color: #A29192;
+  padding: 1rem;
+  margin: 1rem;
+
+  & form {
+    // display: flex;
+    // flex-direction: column;
+
+    & .form-group{
+      margin: .5rem;
+
+      & label, input {
+        display: block;
+        margin: 0 auto;
+      }
+
+      & input {
+        width: 250px;
+        height: 25px;
+      }
+    }
+
+    .submit {
+      background-color: #412223;
+      color: white;
+      padding: .5rem 1rem;
+      cursor: pointer;
+      border: 1px solid #412223;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: beige;
+        color: #412223;
+      }
+    }
+  }
+}

@@ -6,4 +6,4 @@ import { RouterModule } from '@angular/router';
   templateUrl: './dashboard.component.html',
   imports: [RouterModule]
 })
-export class DashboardComponent {}
+export class DashboardComponent { }
