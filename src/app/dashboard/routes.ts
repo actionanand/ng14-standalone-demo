@@ -6,10 +6,12 @@ import { DashboardComponent } from './dashboard.component';
 export const DASHBOARD_ROUTES :Route[] = [
   {
     path: '',
-    component: DashboardComponent
+    component: DashboardComponent,
+    title: 'Dashboard'
   },
   {
-    path: 'today',
-    loadComponent: () => import('./today/today.component').then(mod => mod.TodayComponent)
+    path: 'form',
+    loadComponent: () => import('./typed-form/typed-form.component').then(mod => mod.TypedFormComponent),
+    title: 'Typed Form'
   }
 ];
