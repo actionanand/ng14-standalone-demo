@@ -12,7 +12,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:git": "ng build --output-path dist --base-href /ng14-standalone-demo/",
-    "predeploy": "npm run build:git",
+    "copy404": "cat './dist/index.html' >> './dist/404.html'",
+    "predeploy": "npm run build:git && npm run copy404",
     "deploy": "gh-pages -d dist"
   },
   "private": true,
